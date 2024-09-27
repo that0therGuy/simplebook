@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    text-align:center ;
+    margin:0;
+    user-select: none;
+    box-sizing: border-box;
+    
+}
+.card2,.card3{
+    box-shadow:  20px 20px 60px #d8d8d8,-20px -20px 60px #ffffff ;
+    padding:20px;
+    
+    transition: all .7s !important;
+    
+}
+.card,.card2,.card3,.data,#emblem{
+    border-radius:10px;
+    background-color:rgba(255, 69, 199, 0.07);
+}
+.card{
+    min-height: fit-content;
+}
+body{
+    font-family:'poppins';
+    background-image: radial-gradient(circle, #c21b69 1px, transparent 1px);
+    background-position: 0 0;
+    background-size: 50px 50px;
+    background-color:white;
+    transition: all .7s !important;
+}
+
+body{
+    padding:20px !important;
+    
+}
+
+h6{
+    user-select: text;
+}
+h1,h6{
+    background:linear-gradient( 109.6deg,  rgba(116,18,203,.8) 11.2%, rgba(230,46,131,.8) 91.2% );
+    color:transparent;
+    background-clip: text;
+
+
+}
+
+.q{
+    background:linear-gradient( 109.6deg,  rgba(92, 40, 138, 0.8) 11.2%, rgba(65, 7, 35, 0.8) 91.2% );
+    color:transparent;
+    background-clip: text;                                                  
+    text-shadow: 0 0 30px rgba(145, 0, 207, 0.3);
+    
+}
+.e{
+    background:linear-gradient( 109.6deg,  rgba(255, 0, 128, 0.8) 11.2%, rgba(255, 0, 55, 0.8) 91.2% );
+    color:transparent;
+    background-clip: text;                                                  
+    text-shadow: 0 0 30px rgba(145, 0, 207, 0.3);
+    margin-left:15px;
+    display:none;
+}
+
+
+h1{
+    font-size:300%;
+}
+h6,h5{
+    white-space: pre;
+    font-size:100%;
+    display:inline-block;
+}
+::selection{
+    background-color:rgb(255, 0, 128,.5);
+
+}
+.flag{
+    font-size:20px;
+}
+input{
+    text-align:center;
+    margin:20px;
+    background:linear-gradient( 109.6deg,  rgba(116,18,203,.5) 11.2%, rgba(230,46,131,.5) 91.2% );
+    color:white;
+    border:none;
+    border-radius:4px;
+    font-size:15px;
+    padding:5px;
+    box-shadow:  10px 10px 60px #b4b4b4,
+    -10px -10px 60px #ffffff ;
+    transition:all .5s;
+    
+}
+input:focus{
+    outline: 2px solid rgb(255, 0, 98,.5);
+}
+.cities-option{
+    filter:blur(1.5px);
+}
+input:hover{
+    transform:translateY(-5px);
+}
+
+.container{
+    
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    height:100vh;
+    margin-bottom:0px;
+    flex-direction:row;
+    gap:40px;
+    padding:0;
+}
+.imgs{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    
+}
+.settings{
+    margin-bottom:0px;
+    margin-top:10%;
+}
+.mode{
+    width:auto;
+}
+
+.card{
+    box-shadow:  20px 20px 60px #bebebe,
+-20px -20px 60px #ffffff ;
+    padding:5%;
+    padding-bottom:2%;
+    transition: all .7s !important;
+    border-radius:18.3px;
+}
+
+
+button{
+    border:none;
+    border-radius:4px;
+    margin:10px;
+    font-size:16px;
+    padding:10px;
+    padding-left:22px;
+    padding-right:22px;
+    background:linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    color:transparent;
+    background-clip: text;
+    box-shadow:0 0 30px rgba(145, 0, 207, 0.2);
+    transition:all .5s;
+}
+
+button:hover{
+    box-shadow:0 0 30px rgba(130, 17, 175, 0.3);
+}
+.filter{
+    gap:0;
+    margin:5px;
+}
+h5{
+    font-size:25px !important;
+}
+.data,.imgs{
+    backdrop-filter:blur(2px);
+
+    
+}
+.data{
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+}
+#emblem,#flag{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:1000%;
+}
+
+img{
+    border-radius:2px;
+    max-height:145px;
+    opacity:0.8;
+    
+}
+.coat{
+    height:160px;
+    
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+    .card{
+        
+        padding-bottom:8%;
+    }
+
+    .top-section {
+        order: 2;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-section {
+        order: 1;
+    }
+
+    .data {
+        order: 3;
+    }
+    img{
+        border-radius:2px;
+        max-height:100px;
+        opacity:0.8;
+        
+    }
+    .settings{
+        height:30px;
+        
+    }
+
+    
+}
